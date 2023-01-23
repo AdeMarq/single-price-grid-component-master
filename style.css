@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: hsl(204, 43%, 93%);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    place-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.wrapper   {
+    background-color: white;
+    border-radius: 8px;
+    max-width: 650px;
+    height: 100%;
+    font-family: 'karla', sans-serif;
+    overflow: hidden;
+}
+
+.top-card {
+    width: 100%;
+    height: 45%;
+    padding: 2rem;  
+}
+.top-card h1 {
+    color:  hsl(179, 62%, 43%);
+    font-size: 1.6em;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+.top-card h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.top-card p {
+    color:  hsl(218, 22%, 67%);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.bottom-card {
+    display: flex;
+    height: 55%;
+}
+.bottom-left {
+    background-color: hsl(179, 62%, 43%);
+    height: 100%;
+    padding: 2rem;
+    width: 50%;
+}
+
+.bottom-left h2 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+.bottom-left .price {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+.bottom-left .amount {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+.bottom-left .term {
+    color: hsl(204, 43%, 93%);
+    margin-top: 0.7rem;
+    opacity: 50%;
+}
+.bottom-left p {
+    color: white;
+    margin-bottom: 1.4rem;
+}
+.bottom-left button {
+    padding: 1.1rem;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    background-color: hsl(71, 73%, 54%);
+    box-shadow: 0px 21px 22px 3px rgba(17, 17, 26, 0.18);
+    color: white;
+}
+.bottom-right {
+    padding: 2rem;
+    color: white;
+    background-color:#77cdcc;
+    width: 50%;
+}
+.bottom-right h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.bottom-right .list {
+    list-style-type: none;
+    line-height: 1.45rem;
+    font-weight: 400;
+    font-size: 0.96rem;
+    opacity: 80%;
+}
+
+@media (max-width:670px) {
+    .wrapper {
+        width: 350px;
+        min-height: 100%;
+    }
+    .bottom-card {
+        display: flex; 
+        flex-direction: column;
+        height:65% ;
+    }
+    .top-card {
+        height: 35%;
+    }
+    .bottom-left {
+        width: 100%;
+    }
+    .bottom-right {
+        width: 100%;
+    }
+    .top-card h1 {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        font-size: 1.4rem;
+    }
+    .top-card h2 {
+        font-size: 1rem;
+    }
+    .top-card p {
+        line-height: 1.6rem;
+        font-size: 0.9rem;
+    }
+
+    .bottom-left button {
+        margin-top: 1.1rem;
+        padding: 1rem;
+    }
+}
